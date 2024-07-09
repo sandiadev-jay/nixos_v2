@@ -37,8 +37,6 @@
     musescore
     gimp
     obs-studio
-    unityhub
-    renpy
 
     # office tools
     ranger
