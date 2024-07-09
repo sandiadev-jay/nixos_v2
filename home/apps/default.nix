@@ -23,7 +23,7 @@
     julia
     go
     nodejs_22
-    cmake
+    # cmake
     # python312
     # python312Packages.conda
     # python312Packages.pip
