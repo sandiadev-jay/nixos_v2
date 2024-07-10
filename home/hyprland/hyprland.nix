@@ -152,8 +152,8 @@
         "$mod SHIFT, E, exit,"
         "$mod SHIFT, F, fullscreen, 1"  # Toggle full screen (1 keeps title bar)
         "$mod SHIFT, SPACE, togglefloating,"
-        ''$mod, SEMICOLON, exec, google-chrome-stable --profile-directory="Profile 1"''  # SandiaDev profile
-        ''$mod SHIFT, SEMICOLON, exec, google-chrome-stable --profile-directory="Profile 2"''  # Kinektit profile
+        ''$mod, SEMICOLON, exec, google-chrome-stable --profile-directory="SandiaDev"''  # SandiaDev profile
+        ''$mod SHIFT, SEMICOLON, exec, google-chrome-stable --profile-directory="Kinektit"''  # Kinektit profile
         "$mod SHIFT CTRL, SEMICOLON, exec, brave"
         "$mod, C, exec, code"
 
