@@ -23,7 +23,7 @@
     julia
     go
     nodejs_22
-    # cmake
+    cmake
     # python312
     # python312Packages.conda
     # python312Packages.pip
@@ -33,7 +33,7 @@
     winetricks
 
     # design and artistic tools
-    blender
+    # blender
     musescore
     gimp
     obs-studio
@@ -70,7 +70,7 @@
     brightnessctl  # screen brightness controller
     micro  # command line text editor
     wget  # Get using HTTP, HTTPS, and FTP
-    linuxHeaders  # Header files and scripts for Linux kernel
+    # linuxHeaders  # Header files and scripts for Linux kernel
     kdePackages.polkit-kde-agent-1  # Polkit for Hyprland
 
     # networking
