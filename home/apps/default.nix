@@ -45,6 +45,7 @@
     pantheon.elementary-files  # GUI file browser with miller columns
     # rclone  # Sync utility for cloud drives (Google Drive)
     google-drive-ocamlfuse  # Sync utility for Google Drive
+    dex  # Launches desktop files not in path
 
     # system call monitoring
     strace # system call monitoring
