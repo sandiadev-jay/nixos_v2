@@ -37,6 +37,7 @@
     musescore
     gimp
     obs-studio
+    drawio
 
     # office tools
     ranger  # CLI file browser
