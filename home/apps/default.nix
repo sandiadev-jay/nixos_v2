@@ -39,10 +39,11 @@
     obs-studio
 
     # office tools
-    ranger
-    # nautilus
-    libreoffice
-    pantheon.elementary-files
+    ranger  # CLI file browser
+    # nautilus  # GUI file browser (Gnome's)
+    libreoffice  # Office suite
+    pantheon.elementary-files  # GUI file browser with miller columns
+    rclone  # Sync utility for cloud drives (Google Drive)
 
     # system call monitoring
     strace # system call monitoring
