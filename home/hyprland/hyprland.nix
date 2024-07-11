@@ -108,6 +108,8 @@
         "polkit-kde-authentication-agent-1"
         # ''hyprctl setcursor "McMojave-cursors" 24''
         "nm-applet"
+        "google-drive-ocamlfuse -label SandiaDev ~/SandiaDev\ GDrive"
+        "google-drive-ocamlfuse -label Kinektit ~/Kinektit\ GDrive"
       ];
 
       # Set environment variables
