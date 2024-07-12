@@ -272,7 +272,7 @@
         ", XF86MonBrightnessUp, exec, brightnessctl set +5%"
 
         # Screen lock shortcut
-        "$mod, L, exec, pidof hyprlock || (loginctl lock-session)"
+        "$mod, L, exec, pidof hyprlock || hyprlock"
 
         # Group Binds
         "$mod, T, togglegroup"
@@ -288,6 +288,12 @@
         # Move/resize windows with LMB/RMB and mod
         "$mod, mouse:272, movewindow"
         "$mod, mouse:273, resizewindow"
+      ];
+
+      bindl = [
+        ", switch:off:Lid Switch, exec, hyprctl dispatch dpms off && (pidof hyprlock || hyprlock)"
+        ", switch:on:Lid Switch, exec, hyprctl dispatch dpms on"
+
       ];
     };
   };
