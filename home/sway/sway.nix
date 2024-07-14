@@ -38,7 +38,9 @@
         "${mod}+Q" = "kill";
         "${mod}+Shift+E" = "exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'";
         "${mod}+Shift+R" = "reload";
-        "${mod}+Space" = "exec rofi -show dmenu";  # App Launcher
+        "Super_L --release" = "exec pkill rofi || rofi -show drun";  # App Launcher
+        "${mod}+Space" = "exec pkill rofi || rofi -show window";  # Open Windows
+        "${mod}+Alt+Space" = "exec pkill rofi || rofi -show run";  # Run list from path
 
         # Brightness Control
         "XF86MonBrightnessDown" = "exec brightnessctl set 5%-";
@@ -71,8 +73,8 @@
         
         # App Shortcuts
         "${mod}+Return" = "exec kitty";  # Terminal
-        "${mod}+Semicolon" = ''exec google-chrome-stable --profile-directory="Profile 1"'';  # Chrome SaniaDev Profile
-        "${mod}+Shift+Semicolon" = ''exec google-chrome-stable --profile-directory="Profile 2"'';  # Chrome Kinektit Profile
+        "${mod}+Semicolon" = ''exec google-chrome-stable --profile-directory="SandiaDev"'';  # Chrome SaniaDev Profile
+        "${mod}+Shift+Semicolon" = ''exec google-chrome-stable --profile-directory="Kinektit"'';  # Chrome Kinektit Profile
         "${mod}+Shift+Ctrl+Semicolon" = "exec brave";  # Brave Browser
         "${mod}+C" = "exec code";  # VS Code
 
@@ -209,8 +211,26 @@
         titlebar = false;
       };
 
+      output = {
+        "eDP-1" = "pos -1729 1080 scale 2";
+        "Samsung Electric Company U32R59x HNAR100470" = "pos 0 0 scale 1";
+        "Samsung Electric Company U32R59x H4ZM712156" = "pos 3840 0 scale 1";
+      };
 
+      workspaceOutputAssign = [
+        {
+          "1.output" = "eDP-1";
+        }
+        {
+          "2.output" = "Samsung Electric Company U32R59x HNAR100470";
+        }
+        {
+          "3.output" = "Samsung Electric Company U32R59x H4ZM712156";
+        }
+      ]
     };
+
+
     
     # Extra Config
     # Touchpad gestures
