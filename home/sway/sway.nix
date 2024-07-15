@@ -38,7 +38,6 @@
         "${mod}+Q" = "kill";
         "${mod}+Shift+E" = "exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'";
         "${mod}+Shift+R" = "reload";
-        "Super_L --release" = "exec pkill rofi || rofi -show drun";  # App Launcher
         "${mod}+Space" = "exec pkill rofi || rofi -show window";  # Open Windows
         "${mod}+Alt+Space" = "exec pkill rofi || rofi -show run";  # Run list from path
 
@@ -210,40 +209,26 @@
         border = 2;
         titlebar = false;
       };
-
-      output = {
-        "eDP-1" = "pos -1729 1080 scale 2";
-        "Samsung Electric Company U32R59x HNAR100470" = "pos 0 0 scale 1";
-        "Samsung Electric Company U32R59x H4ZM712156" = "pos 3840 0 scale 1";
-      };
-
-      workspaceOutputAssign = [
-        {
-          "1.output" = "eDP-1";
-        }
-        {
-          "2.output" = "Samsung Electric Company U32R59x HNAR100470";
-        }
-        {
-          "3.output" = "Samsung Electric Company U32R59x H4ZM712156";
-        }
-      ]
     };
-
-
     
     # Extra Config
+    # Rofi Keybind
     # Touchpad gestures
-    # Include monitor config from nwg-displays
+    # Output config
     extraConfig = '' 
+      bindsym --release Super_L exec pkill rofi || rofi -show drun
       bindgesture swipe:4:right workspace prev
       bindgesture swipe:4:left workspace next
       bindgesture swipe:3:right focus left
       bindgesture swipe:3:left focus right
       bindgesture swipe:3:down focus up
       bindgesture swipe:3:up focus down
-      include ./outputs
-      include ./workspaces
+      output eDP-1 pos -1729 1080 scale 2
+      output "Samsung Electric Company U32R59x HNAR100470" pos 0 0 scale 1
+      output "Samsung Electric Company U32R59x H4ZM712156" pos 3840 0 scale 1
+      workspace 1 output eDP-1
+      workspace 2 output "Samsung Electric Company U32R59x HNAR100470"
+      workspace 3 output "Samsung Electric Company U32R59x H4ZM712156"
     '';
   };
 }
