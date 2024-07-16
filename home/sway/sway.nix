@@ -47,7 +47,7 @@
         "${mod}+Shift+R" = "reload";
         "${mod}+Space" = "exec pkill rofi || rofi -show drun";  # Drun list (desktop files) from path
         "${mod}+Alt+Space" = "exec pkill rofi || rofi -show window";  # Open windows
-        "${mod}+Ctrl+Space" = "exec pkill rofi || rofi -show run";  # Application list from path
+        "${mod}+Ctrl+Alt+Space" = "exec pkill rofi || rofi -show run";  # Application list from path
         "${mod}+L" = "exec pkill hyprlock || hyprlock";  # Lock screen
 
         # Brightness Control
