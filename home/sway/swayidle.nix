@@ -10,7 +10,7 @@
         command = "swaylock";
       }
       {
-        event = "after-sleep";
+        event = "after-resume";
         command = "swaymsg 'output * dpms on'";
       }
       {
