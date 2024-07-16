@@ -48,7 +48,7 @@
         "${mod}+Space" = "exec pkill rofi || rofi -show drun";  # Drun list (desktop files) from path
         "${mod}+Alt+Space" = "exec pkill rofi || rofi -show window";  # Open windows
         "${mod}+Ctrl+Alt+Space" = "exec pkill rofi || rofi -show run";  # Application list from path
-        "${mod}+L" = "exec pkill hyprlock || hyprlock";  # Lock screen
+        "${mod}+L" = "exec swaylock";  # Lock screen
 
         # Brightness Control
         "XF86MonBrightnessDown" = "exec brightnessctl set 5%-";
