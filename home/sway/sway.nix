@@ -15,10 +15,10 @@
       menu = "rofi";
 
       startup = [
-        { command = "swayidle"; }
+        # { command = "swayidle"; }
         { command = "nm-applet"; }
-        { command = "google-drive-ocamlfuse -label SandiaDev ~/SandiaDev\ GDrive"; }
-        { command = "google-drive-ocamlfuse -label Kinektit ~/Kinektit\ GDrive"; }
+        { command = "sleep 5; google-drive-ocamlfuse -label SandiaDev ~/SandiaDev\ GDrive"; }
+        { command = "sleep 5; google-drive-ocamlfuse -label Kinektit ~/Kinektit\ GDrive"; }
       ];
 
 
@@ -236,6 +236,7 @@
       workspace 1 output eDP-1
       workspace 2 output "Samsung Electric Company U32R59x HNAR100470"
       workspace 3 output "Samsung Electric Company U32R59x H4ZM712156"
+      bindswitch lid:off exec swaylock
     '';
   };
 }

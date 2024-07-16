@@ -50,6 +50,16 @@
     pulse.enable = true;
   };
 
+  # Possible performance improvement for Sway
+  security.pam.loginLimits = [
+    {
+      domain = "@users";
+      item = "rtprio";
+      type = "-";
+      value = 1;
+    }
+  ];
+
   # Enable CUPS for printing documents
   services.printing.enable = true;
 
