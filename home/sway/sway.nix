@@ -45,8 +45,9 @@
         "${mod}+Q" = "kill";
         "${mod}+Shift+E" = "exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'";
         "${mod}+Shift+R" = "reload";
-        "${mod}+Space" = "exec pkill rofi || rofi -show window";  # Open Windows
-        "${mod}+Alt+Space" = "exec pkill rofi || rofi -show run";  # Run list from path
+        "${mod}+Space" = "exec pkill rofi || rofi -show drun";  # Drun list (desktop files) from path
+        "${mod}+Alt+Space" = "exec pkill rofi || rofi -show window";  # Open windows
+        "${mod}+Ctrl+Space" = "exec pkill rofi || rofi -show run";  # Application list from path
         "${mod}+L" = "exec pkill hyprlock || hyprlock";  # Lock screen
 
         # Brightness Control
@@ -220,11 +221,9 @@
     };
     
     # Extra Config
-    # Rofi Keybind
     # Touchpad gestures
     # Output config
     extraConfig = '' 
-      bindsym --release Super_L exec pkill rofi || rofi -show drun
       bindgesture swipe:4:right workspace prev
       bindgesture swipe:4:left workspace next
       bindgesture swipe:3:right focus left
