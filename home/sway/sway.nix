@@ -15,7 +15,7 @@
       menu = "rofi";
 
       startup = [
-        { command = "hypridle"; }
+        { command = "swayidle"; }
         { command = "nm-applet"; }
         { command = "google-drive-ocamlfuse -label SandiaDev ~/SandiaDev\ GDrive"; }
         { command = "google-drive-ocamlfuse -label Kinektit ~/Kinektit\ GDrive"; }
