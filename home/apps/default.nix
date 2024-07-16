@@ -76,6 +76,7 @@
     wget  # Get using HTTP, HTTPS, and FTP
     # linuxHeaders  # Header files and scripts for Linux kernel
     kdePackages.polkit-kde-agent-1  # Polkit for Hyprland
+    vlock
 
     # networking
     nmap  # For viewing devices connected to the network
@@ -85,7 +86,7 @@
     # nmcli - this is already activated, just a reminder for myself
     # bluetoothctl - this is already activate, just a reminder for myself
     
-    # Hyprland utilities
+    # Hyprland/Sway utilities
     hyprshot
     rofi-wayland  # Application launcher
     hyprpicker
