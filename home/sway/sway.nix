@@ -14,6 +14,13 @@
       workspaceAutoBackAndForth = true;  # Toggle current workspace to return to where I came from
       menu = "rofi";
 
+      startup = [
+        { command = "hypridle"; }
+        { command = "nm-applet"; }
+        { command = "google-drive-ocamlfuse -label SandiaDev ~/SandiaDev\ GDrive"; }
+        { command = "google-drive-ocamlfuse -label Kinektit ~/Kinektit\ GDrive"; }
+      ];
+
 
       # Direction keys
       left = "Left";
@@ -40,6 +47,7 @@
         "${mod}+Shift+R" = "reload";
         "${mod}+Space" = "exec pkill rofi || rofi -show window";  # Open Windows
         "${mod}+Alt+Space" = "exec pkill rofi || rofi -show run";  # Run list from path
+        "${mod}+L" = "exec pkill hyprlock || hyprlock";  # Lock screen
 
         # Brightness Control
         "XF86MonBrightnessDown" = "exec brightnessctl set 5%-";
