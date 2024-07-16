@@ -236,6 +236,8 @@
       workspace 1 output eDP-1
       workspace 2 output "Samsung Electric Company U32R59x HNAR100470"
       workspace 3 output "Samsung Electric Company U32R59x H4ZM712156"
+      bindswitch lid:off exec hyprctl dispatch dpms off && (pidof hyprlock || hyprlock)
+      bindswitch lid:on exec hyprctl dispatch dpms on
     '';
   };
 }
