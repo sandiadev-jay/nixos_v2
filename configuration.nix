@@ -131,7 +131,7 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet -t -r -c 'sway --unsupported-gpu'";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet -t -r -c Hyprland";
         user = "greeter";
       };
     };
@@ -146,7 +146,7 @@
   };
 
   # OnePassword
-  programs._1password.enable = false;  # This is the CLI (battery problems?)
+  programs._1password.enable = true;
   programs._1password-gui = {
     enable = true;
     # Certain features, including CLI integration and system authentication support,
