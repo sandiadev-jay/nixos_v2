@@ -76,7 +76,7 @@
     wget  # Get using HTTP, HTTPS, and FTP
     # linuxHeaders  # Header files and scripts for Linux kernel
     kdePackages.polkit-kde-agent-1  # Polkit for Hyprland
-    vlock
+    vlock  # Locks virtual consoles (command line)
 
     # networking
     nmap  # For viewing devices connected to the network

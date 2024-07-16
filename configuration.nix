@@ -115,6 +115,17 @@
 
   # Enable the Flakes feature and the accompanying new nix command-line tool
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  # TUIgreet configuration
+  services.greetd = {
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd sway --unsupported-gpu";
+        user = "greeter";
+      };
+    };
+  };
   
   # Program Activations
   # Steam
