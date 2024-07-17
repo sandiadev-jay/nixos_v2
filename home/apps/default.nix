@@ -75,7 +75,7 @@
     micro  # command line text editor
     wget  # Get using HTTP, HTTPS, and FTP
     # linuxHeaders  # Header files and scripts for Linux kernel
-    kdePackages.polkit-kde-agent-1  # Polkit for Hyprland
+    lxqt.lxqt-policykit  # Polkit for Hyprland
     vlock  # Locks virtual consoles (command line)
 
     # networking

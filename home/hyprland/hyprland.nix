@@ -105,10 +105,10 @@
         "waybar"
         "hypridle"
         "swaync"
-        "polkit-kde-authentication-agent-1"
+        "lxqt-policykit-agent"
         "nm-applet"
-        "google-drive-ocamlfuse -label SandiaDev ~/SandiaDev\ GDrive"
-        "google-drive-ocamlfuse -label Kinektit ~/Kinektit\ GDrive"
+        "sleep 5; google-drive-ocamlfuse -label SandiaDev ~/SandiaDev\ GDrive"
+        "sleep 5; google-drive-ocamlfuse -label Kinektit ~/Kinektit\ GDrive"
       ];
 
       # Set environment variables
