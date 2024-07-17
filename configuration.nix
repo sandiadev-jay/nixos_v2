@@ -78,6 +78,10 @@
   # Enable Hyprland
   programs.hyprland.enable = true;
 
+  # Enable Seatd
+  services.seatd.enable = true;
+
+
   # For wayland environments
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 

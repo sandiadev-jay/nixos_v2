@@ -21,6 +21,7 @@
         ./configuration.nix
         ./fonts.nix
         ./gpu.nix  # Adding Nvidia support and Intel GPU stuff
+        ./swap.nix  # Adding swap file
         # ./tlp.nix  # Adding TLP for better battery use
         # Home manager as a module of nixos
         # So home-manager configurations are deployed with nixos-rebuild switch
