@@ -290,9 +290,8 @@
       ];
 
       bindl = [
-        ", switch:off:Lid Switch, exec, hyprctl dispatch dpms off && (pidof hyprlock || hyprlock)"
-        ", switch:on:Lid Switch, exec, hyprctl dispatch dpms on"
-
+        ", switch:on:Lid Switch, exec, pidof hyprlock || hyprlock; hyprctl keyword monitor 'eDP-1, disable'"
+        ", switch:off:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, preferred, -1729x1080, 2'"
       ];
     };
   };
