@@ -41,7 +41,6 @@
   };
 
   # Enable sound with pipewire
-  # sound.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -64,9 +63,9 @@
   services.printing.enable = true;
 
   # Enable finger print reader
-  # services.fprintd = {
-  #   enable = true;
-  # };
+  services.fprintd = {
+    enable = true;
+  };
   
   # Enable GeoClue2
   services.geoclue2 = {
