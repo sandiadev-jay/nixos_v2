@@ -88,6 +88,12 @@
   # Gnome Keyring
   services.gnome.gnome-keyring.enable = true;
 
+  # Login.d Stuff - pass more on to WM to handle (also increase delay for hyprlock to load)
+  services.logind = {
+    lidSwitch = "ignore";
+    extraConfig = ''InhibitDelayMaxSec=10'';
+  }; 
+
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
