@@ -46,12 +46,12 @@
     # Laptop required config for dual GPU setup
     prime = {
       # This will start an app using NVIDIA card with sync (and should wtih offload):
-      # __NV_PRIME_RENDER_OFFLOAD=1 (shouldn't be necessary with offload set to false)
-      sync.enable = true;
-      # offload = {
-      #   enable = false;
-      #   enableOffloadCmd = false;
-      # };
+      # __NV_PRIME_RENDER_OFFLOAD=1 (shouldn't be necessary with offload set to false but it works)
+      # sync.enable = true;
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;  # nvidia-offload
+      };
 
       # Make sure to use the correct Bus ID values for your system!
       intelBusId = "PCI:0:2:0";
@@ -61,8 +61,7 @@
 
   # Also putting config for the Intel GPU in here
   # xe requires linux kernelt 6.8 or newer (running 6.9.4)
-  # Trying out the new "xe" driver (other option "i915")
-  # Load the Intel GPU kernel module at stage 1 boot (added to 'boot.initrd.kernelModules').
+  # Load the Intel GPU kernel module at stage 1 boot
   boot.initrd.kernelModules = [ "xe" ];
   # boot.initrd.kernelModules = [ "i915" ];  # might fix sleep
   
