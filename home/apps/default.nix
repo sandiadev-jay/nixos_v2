@@ -33,7 +33,7 @@
     winetricks
 
     # design and artistic tools
-    # blender
+    blender
     musescore
     gimp
     obs-studio
