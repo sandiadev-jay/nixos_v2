@@ -18,7 +18,10 @@
   };
 
   # Load nvidia driver for Xorg and Wayland
-  services.xserver.videoDrivers = ["nvidia"];
+  services.xserver.videoDrivers = [
+    "xe"
+    "nvidia"
+  ];
 
   # Accept Nvidia license
   nixpkgs.config.nvidia.acceptLicense = true;
@@ -47,7 +50,7 @@
     prime = {
       # This will start an app using NVIDIA card with sync (and should wtih offload):
       # __NV_PRIME_RENDER_OFFLOAD=1 (shouldn't be necessary with offload set to false but it works)
-      # sync.enable = true;
+      sync.enable = false;
       offload = {
         enable = true;
         enableOffloadCmd = true;  # nvidia-offload

@@ -27,6 +27,8 @@
   # Additional hardware config
   # This will save you money and maybe your life?
   services.thermald.enable = true;
+  # Also enabling powertop
+  powerManagement.powertop.enable = true;
 
   # Because I have an SSD
   services.fstrim.enable = true;
