@@ -107,8 +107,8 @@
         "swaync"
         "lxqt-policykit-agent"
         "nm-applet"
-        "sleep 5; google-drive-ocamlfuse -label SandiaDev ~/SandiaDev\ GDrive"
-        "sleep 5; google-drive-ocamlfuse -label Kinektit ~/Kinektit\ GDrive"
+        "sleep 5 && google-drive-ocamlfuse -label SandiaDev ~/SandiaDev\ GDrive"
+        "sleep 5 && google-drive-ocamlfuse -label Kinektit ~/Kinektit\ GDrive"
       ];
 
       # Set environment variables
