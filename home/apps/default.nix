@@ -95,6 +95,9 @@
     # xdg-desktop-portal-gtk
     # xdg-desktop-portal-hyprland
     # glib  # This adds gsettings
+
+    # Games
+    zeroadPackages.zeroad-unwrapped
     
   ];
 }

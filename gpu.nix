@@ -72,4 +72,9 @@
     VDPAU_DRIVER = "va_gl";
     VK_DRIVER_FILES = "/run/opengl-driver/share/vulkan/icd.d/nvidia_icd.x86_64.json";  # Resolves NVK requires Nouveau error
   };
+
+  # Adding CUDA for Nvidia
+  environment.systemPackages = [
+    pkgs.cudaPackages.cudatoolkit
+  ];
 }
