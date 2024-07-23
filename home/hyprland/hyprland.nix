@@ -115,10 +115,10 @@
       env = [
         "XDG_SESSION_TYPE,wayland"
         "QT_QPA_PLATFORM,wayland"
-        "LIBVA_DRIVER_NAME,nvidia"
-        "GBM_BACKEND,nvidia-drm"
-        "__GLX_VENDOR_LIBRARY_NAME,nvidia"
-        "NVD_BACKEND,direct"
+        # "LIBVA_DRIVER_NAME,nvidia"
+        # "GBM_BACKEND,nvidia-drm"
+        # "__GLX_VENDOR_LIBRARY_NAME,nvidia"
+        # "NVD_BACKEND,direct"
       ];
 
       input = {
@@ -151,7 +151,8 @@
         "$mod ALT, SPACE, exec, pkill rofi || rofi -show run"
         ", PRINT, exec, pkill hyprshot || hyprshot"
         "$mod, RETURN, exec, kitty"
-        "$mod, F, exec, kitty -e ranger"
+        "$mod, F, exec, io.elementary.files"
+        "$mod, R, exec, kitty -e ranger"
         "$mod, Q, killactive,"
         "$mod SHIFT, E, exit,"
         "$mod SHIFT, F, fullscreen, 1"  # Toggle full screen (1 keeps title bar)
