@@ -294,8 +294,8 @@
       ];
 
       bindl = [
-        ", switch:on:Lid Switch, exec, (pidof hyprlock || hyprlock) & (sleep 3 && hyprctl keyword monitor 'eDP-1, disable')"
-        ", switch:off:Lid Switch, exec, hyprctl keyword monitor 'eDP-1, preferred, -1729x1080, 2'"
+        ", switch:on:Lid Switch, exec, systemctl default"
+        ", switch:off:Lid Switch, exec, systemctl hybrid-sleep"
       ];
     };
   };
