@@ -20,7 +20,8 @@
       let 
         on_batt = ''[ "$(cat /sys/class/power_supply/AC/online)" = "0" ]'';
         on_plug = ''[ "$(cat /sys/class/power_supply/AC/online)" = "1" ]'';
-        sleep = "systemctl suspend";  # Nvidia only supports "suspend" and "hibernate" without hackiness 
+        # sleep = "systemctl suspend";  # Nvidia only supports "suspend" and "hibernate" without hackiness
+        sleep = "systemctl hybrid-sleep"; 
       in
       [
         {
