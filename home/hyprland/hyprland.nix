@@ -149,7 +149,7 @@
         # App Shortcuts
         "$mod, SPACE, exec, pkill rofi || rofi -show window"
         "$mod ALT, SPACE, exec, pkill rofi || rofi -show run"
-        ", PRINT, exec, pkill hyprshot || hyprshot -m region -o ~/Pictures/Screen\ Shots"
+        ", PRINT, exec, hyprshot -m region -o ~/Pictures/Screen\ Shots"
         "$mod, RETURN, exec, kitty"
         "$mod, F, exec, io.elementary.files"
         "$mod, R, exec, kitty -e ranger"
