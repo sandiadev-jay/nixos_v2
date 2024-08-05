@@ -295,8 +295,8 @@
 
       bindl = [
         ", switch:on:Lid Switch, exec, systemctl default"
-        ", switch:off:Lid Switch, exec, systemctl hybrid-sleep"
-        ", power-button, exec, systemctl suspend-then-hibernate"
+        ", switch:off:Lid Switch, exec, systemctl suspend"
+        ", power-button, exec, systemctl suspend"
       ];
     };
   };

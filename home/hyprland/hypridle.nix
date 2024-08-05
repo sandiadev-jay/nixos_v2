@@ -20,8 +20,8 @@
       let 
         on_batt = ''[ "$(cat /sys/class/power_supply/AC/online)" = "0" ]'';
         on_plug = ''[ "$(cat /sys/class/power_supply/AC/online)" = "1" ]'';
-        # sleep = "systemctl suspend";  # Nvidia only supports "suspend" and "hibernate" without hackiness
-        sleep = "systemctl hybrid-sleep"; 
+        sleep = "systemctl suspend";  # Nvidia only supports "suspend" and "hibernate" without hackiness
+        # sleep = "systemctl hybrid-sleep"; # I would also need to set up the resume off-set for hibernate to work
       in
       [
         {
